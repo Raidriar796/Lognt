@@ -1,5 +1,5 @@
 ﻿using HarmonyLib;
-using ResoniteModLoader;            
+using ResoniteModLoader;
 using Elements.Core;
 
 namespace Lognt;
@@ -12,14 +12,17 @@ public class Lognt : ResoniteMod
     public override string Link => "https://github.com/Raidriar796/Lognt";
     public static ModConfiguration? Config;
 
-    [AutoRegisterConfigKey] public static readonly ModConfigurationKey<bool> Errors =
-        new ModConfigurationKey<bool>("Errors", "Allow errors to be written", () => true);
-
-    [AutoRegisterConfigKey] public static readonly ModConfigurationKey<bool> Logs =
+    [AutoRegisterConfigKey]
+    public static readonly ModConfigurationKey<bool> Logs =
         new ModConfigurationKey<bool>("Logs", "Allow logs to be written", () => true);
-    
-    [AutoRegisterConfigKey] public static readonly ModConfigurationKey<bool> Warnings =
+
+    [AutoRegisterConfigKey]
+    public static readonly ModConfigurationKey<bool> Warnings =
         new ModConfigurationKey<bool>("Warnings", "Allow warnings to be written", () => true);
+
+    [AutoRegisterConfigKey]
+    public static readonly ModConfigurationKey<bool> Errors =
+        new ModConfigurationKey<bool>("Errors", "Allow errors to be written", () => true);
 
     public override void OnEngineInit()
     {

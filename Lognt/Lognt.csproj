@@ -7,7 +7,7 @@
     <RootNamespace>Lognt</RootNamespace>
     <AssemblyTitle>Lognt</AssemblyTitle>
     <Authors>Raidriar796</Authors>
-    <Copyright>Copyright © 2024 Raidriar796</Copyright>
+    <Copyright>Copyright © 2025 Raidriar796</Copyright>
     <Version>1.0.0</Version>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
@@ -19,7 +19,7 @@
 
   <PropertyGroup Condition="'$(ResonitePath)'==''">
     <ResonitePath Condition="Exists('C:\Program Files (x86)\Steam\steamapps\common\Resonite\')">C:\Program Files (x86)\Steam\steamapps\common\Resonite\</ResonitePath>
-    <ResonitePath Condition="Exists('/home/raidriar/.steam/steam/steamapps/common/Resonite/')">/home/raidriar/.steam/steam/steamapps/common/Resonite/</ResonitePath>
+    <ResonitePath Condition="Exists('$(HOME)/.local/share/Steam/steamapps/common/Resonite/')">$(HOME)/.local/share/Steam/steamapps/common/Resonite/</ResonitePath>
   </PropertyGroup>
 
   <ItemGroup>

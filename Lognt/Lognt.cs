@@ -8,7 +8,7 @@ public class Lognt : ResoniteMod
 {
     public override string Name => "Logn't";
     public override string Author => "Raidriar796";
-    public override string Version => "1.0.0";
+    public override string Version => "1.1.0";
     public override string Link => "https://github.com/Raidriar796/Lognt";
     public static ModConfiguration? Config;
 

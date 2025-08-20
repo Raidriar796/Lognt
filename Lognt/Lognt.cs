@@ -37,7 +37,7 @@ public class Lognt : ResoniteMod
     {
         private static bool Prefix()
         {
-            if (!Config.GetValue(Errors)) return false;
+            if (!Config!.GetValue(Errors)) return false;
 
             return true;
         }
@@ -48,7 +48,7 @@ public class Lognt : ResoniteMod
     {
         private static bool Prefix()
         {
-            if (!Config.GetValue(Logs)) return false;
+            if (!Config!.GetValue(Logs)) return false;
 
             return true;
         }
@@ -59,7 +59,7 @@ public class Lognt : ResoniteMod
     {
         private static bool Prefix()
         {
-            if (!Config.GetValue(Warnings)) return false;
+            if (!Config!.GetValue(Warnings)) return false;
 
             return true;
         }

@@ -33,7 +33,7 @@
       <Private>false</Private>
     </Reference>
     <Reference Include="Elements.Core">
-      <HintPath>$(ResonitePath)Resonite_Data\Managed\Elements.Core.dll</HintPath>
+      <HintPath>$(ResonitePath)Elements.Core.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>
